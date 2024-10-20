@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    width: 100%;
+    height: 100vh; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    background-color: black;
+    width: 150px;
+    height: 112px;
+    margin: 5px;
+}
+
+#logo-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#box2
+{
+    background-color: black;
+    margin: 5px;
+    height: auto;
+    width: auto;
+}
+#box2 h1 {
+    color: white;
+    font-family: Orbitron, Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid orange;
+}

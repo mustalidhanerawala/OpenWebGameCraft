@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
     background-color: black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 #box0 {
@@ -20,8 +26,7 @@ body {
     width: 100%;
     height: 40px;
 }
-
-#btn1,#btn2,#btn3
+#btn1,#btn2,#btn3,#btn4
 {
     font-family: Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -34,74 +39,47 @@ body {
     margin: 10px;
     box-sizing: border-box;
 }
-#btn1:hover,#btn2:hover ,#btn3:hover {
+#btn1:hover,#btn2:hover ,#btn3:hover, #btn4:hover  {
     background-color: #c10005; 
     transform: scale(1.05); 
 }
+
 #box1 {
-    margin-top: 100px;
+    margin-top: 150px;
     align-self: center;
     justify-self: center;
-    width: 20vw;
-    height: auto;
+    background-color: black;
+    width: 150px;
+    height: 112px;
 }
 
 #logo-image {
-    width: 20vw;
-    padding: 2vw;
+    margin-left: 2vw;
+    width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 #box2 {
     align-self: center;
     justify-self: center;
-    display: inline-block;
+    background-color: black;
+    margin: 5px;
     height: auto;
+    width: auto;
+    text-align: center;
 }
 
 #box2 h1 {
     color: white;
     font-family: Orbitron, Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2rem;
-    font-size: 8vh;
+    font-size: 25px;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid orange;
-    animation: typing 3.8s steps(19, end), blink 0.7s step-end infinite;
-    transition: clip-path 0.5s ease-out;
-
 }
-
-@keyframes typing {
-    0% {
-        width: 0%;
-    }
-
-    25% {
-        width: 25%;
-    }
-
-    50% {
-        width: 50%;
-    }
-
-    75% {
-        width: 75%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange
-    }
+#btn4
+{
+    margin: 20px;
 }

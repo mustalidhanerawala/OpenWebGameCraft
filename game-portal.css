@@ -1,0 +1,134 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2C2C2C;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #c10005; 
+    font-size: 2.5rem;
+    font-family: Orbitron, Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;;
+}
+
+/* Game cards section */
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Card styling */
+.card {
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #c10005; 
+}
+
+.card-content {
+    padding: 15px;
+}
+
+#btn4
+{
+    font-family: Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #707070;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#btn4:hover  {
+    background-color: #c10005; 
+    transform: scale(1.05); }
+.card-content h2 {
+    color: #FFAB00;; 
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-content p {
+    color: #F5F5F5;
+    font-size: 1rem;
+    font-family: Pixelify Sans, Codeman38, Silkscreen, Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2C2C;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-content h2 {
+        font-size: 1rem;
+    }
+
+    .card-content p {
+        font-size: 0.8rem;
+    }
+}

@@ -42,6 +42,9 @@ body {
 #player2 {
     background-color: mediumseagreen;
 }
+#player1 {
+    background-color: rgb(78, 168, 204);
+}
 
 .circle-container {
     width: 100%;
@@ -55,7 +58,7 @@ body {
 {
     height: 50px;
     width: 50px;
-    background-color: blue;
+    background-color: yellow;
     border: 5px solid black;
     border-radius: 50%;
     display: flex;
@@ -96,5 +99,88 @@ body {
 }
 
 .circle-container button:hover {
+    background-color: darkgreen;
+}
+
+#sec3 {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    margin: 20px auto;
+    width: 90%; 
+    padding: 10px;
+    background-color: lightgray; 
+}
+
+.slot {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: start; 
+    background-color: white; 
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    height: 300px; 
+}
+
+#slot1, #slot2, #slot3, #slot4, #slot5, #slot6, #slot7, #slot8, #slot9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    background-color: white;
+    border: 2px solid black; 
+    padding: 10px;
+    margin: 20px;
+    height: 300px; 
+}
+
+
+.ring-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.circle-small,
+.circle-medium,
+.circle-large {
+    border-radius: 50%; 
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-small {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+}
+
+.circle-medium {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.circle-large {
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+}
+
+.place-button {
+    padding: 5px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-button:hover {
     background-color: darkgreen;
 }

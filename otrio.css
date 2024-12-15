@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+}
+
+#sec1 {
+    display: flex;
+    background-color: red;
+    width: 100vw;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#sec2 {
+    width: 100vw;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: start; 
+}
+
+#player1,
+#player2 {
+    width: 45%; 
+    background-color: rgb(5, 68, 29);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+#player2 {
+    background-color: mediumseagreen;
+}
+
+.circle-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.circle-small 
+{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-medium {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-large {
+    height: 120px;
+    width: 120px;
+    background-color: violet;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.circle-container button:hover {
+    background-color: darkgreen;
+}
